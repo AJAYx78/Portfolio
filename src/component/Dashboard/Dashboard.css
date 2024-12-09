@@ -1,0 +1,27 @@
+/* Dashboard.css */
+.animated-section {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+  }
+  
+  .animated-section.fade-in {
+    opacity: 1; /* Show the section when in view */
+  }
+  
+  .stick-figure-animation {
+    margin-top: 20px;
+    animation: wave 2s ease-in-out infinite; /* Wave animation */
+  }
+  
+  .stick-figure {
+    font-size: 50px; /* Adjust size of the stick figure */
+  }
+  
+  @keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
